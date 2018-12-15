@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		721C9B7A21C5C4A800B28FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721C9B7921C5C4A800B28FB9 /* Assets.xcassets */; };
+		721C9B9921C5C50A00B28FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C9B8721C5C50A00B28FB9 /* main.m */; };
+		721C9B9B21C5C50A00B28FB9 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C9B8E21C5C50A00B28FB9 /* CameraViewController.m */; };
+		721C9B9C21C5C50A00B28FB9 /* RecordButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C9B9021C5C50A00B28FB9 /* RecordButtonViewController.m */; };
+		721C9B9D21C5C50A00B28FB9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C9B9121C5C50A00B28FB9 /* MainViewController.m */; };
+		721C9B9E21C5C50A00B28FB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C9B9421C5C50A00B28FB9 /* AppDelegate.m */; };
+		721C9B9F21C5C50A00B28FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 721C9B9721C5C50A00B28FB9 /* LaunchScreen.storyboard */; };
+		721C9BA221C5C53900B28FB9 /* AvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721C9BA121C5C53900B28FB9 /* AvatarKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		721C9B6D21C5C4A700B28FB9 /* SBSAnimojiRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBSAnimojiRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		721C9B7921C5C4A800B28FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		721C9B8721C5C50A00B28FB9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		721C9B8821C5C50A00B28FB9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		721C9B8A21C5C50A00B28FB9 /* AVTPuppetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTPuppetView.h; sourceTree = "<group>"; };
+		721C9B8B21C5C50A00B28FB9 /* AVTAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTAvatarView.h; sourceTree = "<group>"; };
+		721C9B8C21C5C50A00B28FB9 /* AVTPuppet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVTPuppet.h; sourceTree = "<group>"; };
+		721C9B8E21C5C50A00B28FB9 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		721C9B8F21C5C50A00B28FB9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		721C9B9021C5C50A00B28FB9 /* RecordButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordButtonViewController.m; sourceTree = "<group>"; };
+		721C9B9121C5C50A00B28FB9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		721C9B9221C5C50A00B28FB9 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		721C9B9321C5C50A00B28FB9 /* RecordButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordButtonViewController.h; sourceTree = "<group>"; };
+		721C9B9421C5C50A00B28FB9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		721C9B9521C5C50A00B28FB9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		721C9B9821C5C50A00B28FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		721C9BA121C5C53900B28FB9 /* AvatarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AvatarKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		721C9B6A21C5C4A700B28FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721C9BA221C5C53900B28FB9 /* AvatarKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		721C9B6421C5C4A700B28FB9 = {
+			isa = PBXGroup;
+			children = (
+				721C9B6F21C5C4A700B28FB9 /* SBSAnimojiRecording */,
+				721C9BA021C5C53900B28FB9 /* Frameworks */,
+				721C9B6E21C5C4A700B28FB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		721C9B6E21C5C4A700B28FB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				721C9B6D21C5C4A700B28FB9 /* SBSAnimojiRecording.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		721C9B6F21C5C4A700B28FB9 /* SBSAnimojiRecording */ = {
+			isa = PBXGroup;
+			children = (
+				721C9B7921C5C4A800B28FB9 /* Assets.xcassets */,
+				721C9B8921C5C50A00B28FB9 /* AvatarKit */,
+				721C9B8D21C5C50A00B28FB9 /* Source */,
+				721C9B8621C5C50A00B28FB9 /* Supporting files */,
+				721C9B9621C5C50A00B28FB9 /* User interface */,
+			);
+			path = SBSAnimojiRecording;
+			sourceTree = "<group>";
+		};
+		721C9B8621C5C50A00B28FB9 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				721C9B8721C5C50A00B28FB9 /* main.m */,
+				721C9B8821C5C50A00B28FB9 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		721C9B8921C5C50A00B28FB9 /* AvatarKit */ = {
+			isa = PBXGroup;
+			children = (
+				721C9B8B21C5C50A00B28FB9 /* AVTAvatarView.h */,
+				721C9B8C21C5C50A00B28FB9 /* AVTPuppet.h */,
+				721C9B8A21C5C50A00B28FB9 /* AVTPuppetView.h */,
+			);
+			path = AvatarKit;
+			sourceTree = "<group>";
+		};
+		721C9B8D21C5C50A00B28FB9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				721C9B8F21C5C50A00B28FB9 /* AppDelegate.h */,
+				721C9B9421C5C50A00B28FB9 /* AppDelegate.m */,
+				721C9B9221C5C50A00B28FB9 /* CameraViewController.h */,
+				721C9B8E21C5C50A00B28FB9 /* CameraViewController.m */,
+				721C9B9521C5C50A00B28FB9 /* MainViewController.h */,
+				721C9B9121C5C50A00B28FB9 /* MainViewController.m */,
+				721C9B9321C5C50A00B28FB9 /* RecordButtonViewController.h */,
+				721C9B9021C5C50A00B28FB9 /* RecordButtonViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		721C9B9621C5C50A00B28FB9 /* User interface */ = {
+			isa = PBXGroup;
+			children = (
+				721C9B9721C5C50A00B28FB9 /* LaunchScreen.storyboard */,
+			);
+			path = "User interface";
+			sourceTree = "<group>";
+		};
+		721C9BA021C5C53900B28FB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				721C9BA121C5C53900B28FB9 /* AvatarKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		721C9B6C21C5C4A700B28FB9 /* SBSAnimojiRecording */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 721C9B8321C5C4A800B28FB9 /* Build configuration list for PBXNativeTarget "SBSAnimojiRecording" */;
+			buildPhases = (
+				721C9B6921C5C4A700B28FB9 /* Sources */,
+				721C9B6A21C5C4A700B28FB9 /* Frameworks */,
+				721C9B6B21C5C4A700B28FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SBSAnimojiRecording;
+			productName = SBSAnimojiRecording;
+			productReference = 721C9B6D21C5C4A700B28FB9 /* SBSAnimojiRecording.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		721C9B6521C5C4A700B28FB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = SimonBS;
+				TargetAttributes = {
+					721C9B6C21C5C4A700B28FB9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 721C9B6821C5C4A700B28FB9 /* Build configuration list for PBXProject "SBSAnimojiRecording" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 721C9B6421C5C4A700B28FB9;
+			productRefGroup = 721C9B6E21C5C4A700B28FB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				721C9B6C21C5C4A700B28FB9 /* SBSAnimojiRecording */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		721C9B6B21C5C4A700B28FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721C9B7A21C5C4A800B28FB9 /* Assets.xcassets in Resources */,
+				721C9B9F21C5C50A00B28FB9 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		721C9B6921C5C4A700B28FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721C9B9B21C5C50A00B28FB9 /* CameraViewController.m in Sources */,
+				721C9B9C21C5C50A00B28FB9 /* RecordButtonViewController.m in Sources */,
+				721C9B9E21C5C50A00B28FB9 /* AppDelegate.m in Sources */,
+				721C9B9D21C5C50A00B28FB9 /* MainViewController.m in Sources */,
+				721C9B9921C5C50A00B28FB9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		721C9B9721C5C50A00B28FB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721C9B9821C5C50A00B28FB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		721C9B8121C5C4A800B28FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		721C9B8221C5C4A800B28FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		721C9B8421C5C4A800B28FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NQFWJHC63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SBSAnimojiRecording/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SBSAnimojiRecording;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		721C9B8521C5C4A800B28FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8NQFWJHC63;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/SBSAnimojiRecording/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.simonbs.SBSAnimojiRecording;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		721C9B6821C5C4A700B28FB9 /* Build configuration list for PBXProject "SBSAnimojiRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721C9B8121C5C4A800B28FB9 /* Debug */,
+				721C9B8221C5C4A800B28FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		721C9B8321C5C4A800B28FB9 /* Build configuration list for PBXNativeTarget "SBSAnimojiRecording" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				721C9B8421C5C4A800B28FB9 /* Debug */,
+				721C9B8521C5C4A800B28FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 721C9B6521C5C4A700B28FB9 /* Project object */;
+}
