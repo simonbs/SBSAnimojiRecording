@@ -1,6 +1,6 @@
 # SBSAnimojiRecording
 
-Shows how Apples Animojis can be overlayed on a camera feed using ARKit. *NB: This is achieved in a hacky way.*.
+Shows how Apples Animojis can be overlayed on a camera feed using ARKit. **NB: This is achieved in a hacky way.**
 
 Videos are recorded using ReplayKit.
 
