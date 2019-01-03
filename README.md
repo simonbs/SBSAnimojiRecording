@@ -14,7 +14,8 @@ Tested on iPhone X and iPhone XS Max.
 # Caveats
 
 - It's super hacky.
-- It relies on [magic numbers](https://github.com/simonbs/SBSAnimojiRecording/blob/master/SBSAnimojiRecording/Source/CameraViewController.m#L51-L52) for positioning the Animoji.
+- It relies on [magic numbers](https://github.com/simonbs/SBSAnimojiRecording/blob/master/SBSAnimojiRecording/Source/CameraViewController.m#L58-L68) for positioning the Animoji.
+- It uses ugly [device checks](https://github.com/simonbs/SBSAnimojiRecording/blob/master/SBSAnimojiRecording/Source/CameraViewController.m#L58-L68).
 - It's glitching when showing some Animojis.
 
 # Notice
