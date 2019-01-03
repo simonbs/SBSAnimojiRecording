@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72005CEF21DE2D6A00107FD9 /* UIDevice+ModelIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 72005CEE21DE2D6A00107FD9 /* UIDevice+ModelIdentifier.m */; };
 		721C9B7A21C5C4A800B28FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 721C9B7921C5C4A800B28FB9 /* Assets.xcassets */; };
 		721C9B9921C5C50A00B28FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C9B8721C5C50A00B28FB9 /* main.m */; };
 		721C9B9B21C5C50A00B28FB9 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C9B8E21C5C50A00B28FB9 /* CameraViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72005CED21DE2D6A00107FD9 /* UIDevice+ModelIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ModelIdentifier.h"; sourceTree = "<group>"; };
+		72005CEE21DE2D6A00107FD9 /* UIDevice+ModelIdentifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ModelIdentifier.m"; sourceTree = "<group>"; };
 		721C9B6D21C5C4A700B28FB9 /* SBSAnimojiRecording.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBSAnimojiRecording.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		721C9B7921C5C4A800B28FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		721C9B8721C5C50A00B28FB9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 		721C9B8D21C5C50A00B28FB9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				72005CED21DE2D6A00107FD9 /* UIDevice+ModelIdentifier.h */,
+				72005CEE21DE2D6A00107FD9 /* UIDevice+ModelIdentifier.m */,
 				721C9B8F21C5C50A00B28FB9 /* AppDelegate.h */,
 				721C9B9421C5C50A00B28FB9 /* AppDelegate.m */,
 				721C9B9221C5C50A00B28FB9 /* CameraViewController.h */,
@@ -199,6 +204,7 @@
 			files = (
 				721C9B9B21C5C50A00B28FB9 /* CameraViewController.m in Sources */,
 				721C9B9C21C5C50A00B28FB9 /* RecordButtonViewController.m in Sources */,
+				72005CEF21DE2D6A00107FD9 /* UIDevice+ModelIdentifier.m in Sources */,
 				721C9B9E21C5C50A00B28FB9 /* AppDelegate.m in Sources */,
 				721C9B9D21C5C50A00B28FB9 /* MainViewController.m in Sources */,
 				721C9B9921C5C50A00B28FB9 /* main.m in Sources */,

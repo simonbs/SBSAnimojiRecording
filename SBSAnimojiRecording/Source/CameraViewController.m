@@ -9,6 +9,7 @@
 #import "CameraViewController.h"
 #import "AVTPuppetView.h"
 #import "AVTPuppet.h"
+#import "UIDevice+ModelIdentifier.h"
 @import ARKit;
 @import ReplayKit;
 
@@ -16,6 +17,7 @@
 @property (nonatomic, strong) AVTPuppetView *puppetView;
 @property (nonatomic, strong) ARSCNView *sceneView;
 @property (nonatomic, strong) SCNNode *puppetNode;
+@property (nonatomic, strong) UIView *faceTrackingView;
 @end
 
 @implementation CameraViewController
@@ -23,12 +25,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    [self setupPuppetViewWithPuppetNamed:@"koala"];
+    [self setupPuppetViewWithPuppetNamed:@"monkey"];
     [self setupSceneView];
     [self setupPuppetNode];
+    [self setupFaceTrackingView];
 }
 
-- (void)setupPuppetViewWithPuppetNamed:(NSString*)puppetName  {
+- (void)setupPuppetViewWithPuppetNamed:(NSString*)puppetName {
     AVTPuppet *puppet = [AVTPuppet puppetNamed:puppetName options:nil];
     self.puppetView = [[AVTPuppetView alloc] init];
     [self.puppetView setAvatarInstance:(AVTAvatarInstance*)puppet];
@@ -48,9 +51,21 @@
 }
 
 - (void)setupPuppetNode {
-    CGFloat scale = 0.21;
-    CGFloat verticalOffset = -0.09;
-    SCNNode *innerNode = [self.puppetView.scene.rootNode clone];
+    CGFloat scale;
+    CGFloat verticalOffset;
+    SCNNode *innerNode;
+    NSString *modelIdentifier = [UIDevice sbs_modelIdentifier];
+    if ([modelIdentifier isEqualToString:@"iPhone10,3"] || [modelIdentifier isEqualToString:@"iPhone10,6"]) {
+        // iPhone X
+        scale = 0.21;
+        verticalOffset = -0.09;
+        innerNode = [self.puppetView.scene.rootNode clone];
+    } else {
+        // Assume newer than iPhone X.
+        scale = 0.225;
+        verticalOffset = -0.121;
+        innerNode = self.puppetView.scene.rootNode;
+    }
     SCNNode *skeletonNode = [innerNode childNodeWithName:@"skeleton" recursively:YES];
     self.puppetNode = [[SCNNode alloc] init];
     [self.puppetNode addChildNode:innerNode];
@@ -60,11 +75,31 @@
     skeletonNode.scale = SCNVector3Make(scale, scale, scale);
 }
 
+- (void)setupFaceTrackingView {
+    self.faceTrackingView = [[UIView alloc] init];
+    self.faceTrackingView.layer.borderWidth = 4;
+    self.faceTrackingView.layer.borderColor = [[UIColor greenColor] CGColor];
+    [self.view addSubview:self.faceTrackingView];
+}
+
 - (void)renderer:(id<SCNSceneRenderer>)renderer didAddNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
     if ([anchor isKindOfClass:[ARFaceAnchor class]]) {
         if ([[node childNodes] count] == 0) {
             [node addChildNode:self.puppetNode];
         }
+    }
+}
+
+- (void)renderer:(id<SCNSceneRenderer>)renderer didUpdateNode:(SCNNode *)node forAnchor:(ARAnchor *)anchor {
+    if ([anchor isKindOfClass:[ARFaceAnchor class]]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            SCNVector3 projectedPosition = [self.sceneView projectPoint:node.position];
+            CGSize viewSize = CGSizeMake(50, 50);
+            self.faceTrackingView.frame = CGRectMake(projectedPosition.x - viewSize.width / 2,
+                                                     projectedPosition.y - viewSize.height / 2,
+                                                     viewSize.width,
+                                                     viewSize.height);
+        });
     }
 }
 
