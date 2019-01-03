@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blackColor];
-    [self setupPuppetViewWithPuppetNamed:@"monkey"];
+    [self setupPuppetViewWithPuppetNamed:@"koala"];
     [self setupSceneView];
     [self setupPuppetNode];
     [self setupFaceTrackingView];
