@@ -4,6 +4,8 @@ Shows how Apples Animojis can be overlayed on a camera feed using ARKit. **NB: T
 
 Videos are recorded using ReplayKit.
 
+Tested on iPhone X and iPhone XS Max.
+
 # Usage
 
 - Clone the repository and run the app on a device that supports Animojis.
